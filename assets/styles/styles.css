@@ -8,3 +8,25 @@
     --non-photo-blue-2: #ade8f4ff;
     --light-cyan: #caf0f8ff;
 }
+
+ .contact-img {
+    background-image: url('https://pagedone.io/asset/uploads/1696488602.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.contact-form {
+    background-color: var(--non-photo-blue-2);
+    padding: 30px;
+    border-radius: 15px;
+}
+.sumit-btn{
+    background-color: var(--marian-blue);
+    color: var(--light-cyan);
+
+}
+.sumit-btn:hover{
+    border-color: var(--marian-blue);
+    color: var(--marian-blue);
+
+}

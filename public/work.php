@@ -7,10 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $communication_method = isset($_POST['communication_method']) ? $_POST['communication_method'] : '';
     $message = htmlspecialchars($_POST['message']);
 
-    // Aquí puedes enviar el mensaje a un correo electrónico o guardarlo en una base de datos
-    // Por ejemplo, con mail() o insertar en la base de datos.
 
-    // Solo para propósito de demostración:
     echo "<div class='alert alert-success' role='alert'>Gracias por tu mensaje, $name. Nos pondremos en contacto contigo pronto.</div>";
 }
 ?>
@@ -61,6 +58,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="mb-3">
                             <textarea name="message" class="form-control form-control-lg" placeholder="Message" rows="4" required></textarea>
                         </div>
+
+
+
                         <button type="submit" class="btn sumit-btn btn-lg w-100">Send</button>
                     </form>
                 </div>
