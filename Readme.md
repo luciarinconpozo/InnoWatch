@@ -9,7 +9,8 @@ Bienvenido al proyecto **InnoWatch**, una plataforma web de comercio, ofrecemos 
 ## Estructura del Proyecto
 
 La estructura principal del proyecto incluye las siguientes carpetas y archivos:
-
+    
+    
 ```plaintext
 InnoWatch/
 ├── Components/        
