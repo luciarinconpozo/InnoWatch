@@ -8,3 +8,8 @@
     --non-photo-blue-2: #ade8f4ff;
     --light-cyan: #caf0f8ff;
 }
+
+
+.bg-marian-blue {
+    background-color: var(--marian-blue);
+}
