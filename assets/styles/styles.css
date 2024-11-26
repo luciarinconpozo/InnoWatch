@@ -13,3 +13,16 @@
 .bg-marian-blue {
     background-color: var(--marian-blue);
 }
+
+.btn-outline-vivid-sky-blue {
+    border: 1px solid var(--vivid-sky-blue);
+    color: var(--vivid-sky-blue);
+    background-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn-outline-vivid-sky-blue:hover {
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    background-color: var(--vivid-sky-blue); /* Fondo amarillo al pasar el mouse */
+    border-color: var(--vivid-sky-blue); /* Mantener el color del borde */
+}
