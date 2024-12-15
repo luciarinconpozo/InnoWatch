@@ -9,6 +9,9 @@
     --light-cyan: #caf0f8ff;
 }
 
+body {
+    margin: 0;
+}
 
 .bg-marian-blue {
     background-color: var(--marian-blue);
@@ -25,4 +28,18 @@
     color: #ffffff; /* Color del texto al pasar el mouse */
     background-color: var(--vivid-sky-blue); /* Fondo amarillo al pasar el mouse */
     border-color: var(--vivid-sky-blue); /* Mantener el color del borde */
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.hero {
+    background-color: var(--blue-green);
+}
+
+.colored-text {
+    background-color: var(--marian-blue);
 }
