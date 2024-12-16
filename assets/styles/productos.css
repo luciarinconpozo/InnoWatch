@@ -1,0 +1,321 @@
+:root{
+    --marian-blue: #023e8aff;
+    --honolulu-blue: #0077b6ff;
+    --blue-green: #0096c7ff;
+    --pacific-cyan: #00b4d8ff;
+    --vivid-sky-blue: #48cae4ff;
+    --non-photo-blue: #90e0efff;
+    --non-photo-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+}
+
+@import url("https://fonts.googleapis.com/css?famiyl=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 10;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #151515;
+  margin: 0;
+  background-image: url('../img/background-3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Título */
+h1 {
+  color: var(--honolulu-blue);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h3{
+  color: var(--honolulu-blue);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Encabezado */
+.page-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Configuración básica del contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column; /* Cambiar a distribución vertical */
+  align-items: center; /* Centrar los elementos verticalmente */
+  gap: 20px; /* Espaciado entre las tarjetas y la tabla */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para las tarjetas */
+.card {
+  position: relative;
+  width: 350px; /* Tamaño fijo */
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background-color: #111;
+  border-radius: 15px;
+}
+
+.card:hover {
+  width: 1000px;
+  transition-delay: 0.5s;
+}
+.card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .circle::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  left: 2;
+  right: 2;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #191919;
+  border: 8px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  transition: 0.5s, background 0.5s;
+  transition-delay: 0.75s, 1s;
+}
+.card:hover .circle::before {
+  transition-delay: 0.5s;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+.card .circle .logo {
+  position: relative;
+  width: 250px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.card:hover .circle .logo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.card .product_img {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 75%; /* Centrado horizontal */
+    transform: translate(-50%, -50%) scale(1); /* Centrado total */
+    height: 300px; /* Tamaño máximo de la imagen */
+    opacity: 0; /* Imagen oculta inicialmente */
+    visibility: hidden; /* Imagen oculta inicialmente */
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card:hover .product_img {
+    transform: translate(-50%, -50%) scale(1.1); /* Ligero zoom en hover */
+    opacity: 1; /* Imagen visible */
+    visibility: visible; /* Imagen visible */
+  }
+.card .content {
+  position: absolute;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 20px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.card:hover .content {
+  transition-delay: 0.75s;
+  opacity: 1;
+  visibility: visible;
+  left: 20px;
+}
+.card .content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+}
+.card .content p {
+  color: #fff;
+}
+.card .content a {
+  position: relative;
+  color: #111;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Tabla de precios */
+.pricing-table {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.pricing-table:hover {
+  transform: scale(1.05);
+}
+
+.pricing-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.pricing-table th {
+  background: #222;
+  color: var(--vivid-sky-blue);
+  text-transform: uppercase;
+}
+
+.pricing-table tr:nth-child(even) {
+  background: #191919;
+}
+
+.pricing-table tr:nth-child(odd) {
+  background: #212121;
+}
+
+.pricing-table td ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pricing-table td ul li strong {
+  color: var(--pacific-cyan);
+}
+
+.pricing-table h2 {
+  text-align: center;
+  color: var(--vivid-sky-blue);
+  margin-bottom: 20px;
+}
+
+/* Opiniones */
+.opinions {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px; /* Espaciado entre las opiniones */
+  justify-items: center; /* Centrar las opiniones */
+}
+
+/* Opiniones */
+.opinions {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px; /* Espaciado entre las opiniones */
+  justify-items: center; /* Centrar las opiniones */
+}
+
+/* Estilo para las opiniones */
+.opinion {
+  background: #191919;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 350px;
+  transition: 0.3s ease;
+}
+
+.opinion:hover {
+  transform: scale(1.05);
+}
+
+.opinion p {
+  margin: 0;
+}
+
+.opinion strong {
+  font-size: 1.2em;
+  color: var(--pacific-cyan);
+}
+
+/* Estilo para las estrellas de calificación */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: var(--pacific-cyan);
+  margin: 0 3px;
+}
+
+.star:last-child {
+  color: #555; /* Para las estrellas vacías */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
