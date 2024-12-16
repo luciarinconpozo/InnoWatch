@@ -1,4 +1,6 @@
 <?php
+require_once('./Components/header.php');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -65,6 +67,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section>
+
+    <?php require_once('./Components/footer.php'); ?>
+
 </body>
 
 </html>
