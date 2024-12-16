@@ -1,7 +1,4 @@
 <?php require("Components/header.php")?>
-
-
-<body>
   
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -88,6 +85,5 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.7337884839358!2d-4.954064624327292!3d36.48814537233786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7329c0e6afb247%3A0x21553eca5885655c!2sC.%20Ribera%2C%2013%2C%20Nueva%20Andaluc%C3%ADa%2C%2029660%20Marbella%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1734198806992!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
 
 <?php require("Components/footer.php")?>
