@@ -1,19 +1,6 @@
 <?php
-require_once('../Components/header.php');
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
-
-    // Aquí puedes agregar la validación de usuario, por ejemplo, comprobar en una base de datos
-    if ($email == "usuario@example.com" && $password == "contraseña123") {
-        echo "<div class='alert alert-success text-center' role='alert'>Bienvenido, $email. Has iniciado sesión con éxito.</div>";
-    } else {
-        echo "<div class='alert alert-danger text-center' role='alert'>Correo electrónico o contraseña incorrectos.</div>";
-    }
-}
+include('../Components/header.php');
 ?>
-
     <section class="login-section py-5">
         <div class="container">
             <div class="row">
@@ -39,9 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section>
-
-    <?php require_once('../Components/footer.php'); ?>
-
-</body>
-
-</html>
+    <?php
+include('../Components/footer.php');
+?>
