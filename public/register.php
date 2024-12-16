@@ -46,16 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
     </section>
-
-    <?php require_once('../Components/footer.php'); ?>
-
-</body>
-=======
-    </div>
-</section>
->>>>>>> 43d19b55e502aa05abc80f92c5a574c1a12e0b6d
-
+    
 <?php 
 require ("../Components/footer.php"); ?>
