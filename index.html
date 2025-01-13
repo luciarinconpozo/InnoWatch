@@ -11,43 +11,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-marian-blue">
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="./assets/img/Logo Innovawatch.png" alt="Bootstrap" width="70" height="50">
-      </a>
-      <a class="navbar-brand text-light" href="#">Innovawatch</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="./public/">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="/public/contact.html">Contacto</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./public/login.html" class="btn btn-outline-vivid-sky-blue">Login</a>
-          </li>
-          <br>
-          <li class="nav-item">
-            <a href="./public/register.html" class="btn btn-outline-vivid-sky-blue">Register</a>
-          </li>
-
-        </ul>
-
-        <form class="d-flex me-5" role="search">
-          <input class="form-control me-2" type="search" placeholder="Encuentra tu producto" aria-label="Search">
-          <button class="btn btn-outline-success d-inline-flex align-items-center" type="submit">Search <img
-              src="./assets/img/search_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg"></button>
-        </form>
-      </div>
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/Logo Innovawatch.png" alt="Innovawatch Logo" width="70" height="50">
+        </a>
+        <a class="navbar-brand text-light" href="../index.html">Innovawatch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./public/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./public/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./public/login.html" class="btn btn-outline-light">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./public/register.html" class="btn btn-outline-light">Register</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-5" role="search">
+                <input class="form-control me-2" type="search" placeholder="Encuentra tu producto" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
     </div>
-  </nav>
+</nav>
 
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
@@ -139,16 +134,26 @@
   <p class="colored-text">G</p>
 
  
+  <section>
+    <a href="./public/work.html">Trabaja con nosotros</a>
+  </section>
 
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.7337884839358!2d-4.954064624327292!3d36.48814537233786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7329c0e6afb247%3A0x21553eca5885655c!2sC.%20Ribera%2C%2013%2C%20Nueva%20Andaluc%C3%ADa%2C%2029660%20Marbella%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1734198806992!5m2!1ses!2ses"
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <footer class="bg-marian-blue">
-      <h1>footer</h1>
-    </footer>
-
+   <!-- Pie de página -->
+   <footer class="bg-primary text-light py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="footerMain mb-0">InnovaWatch S.A 2024 &copy;</p>
+        <div class="social">
+            <a href="https://x.com/innovawatch?t=INDYsRH5XOkVjcHnez8QZQ&s=09">
+                <img src="../assets/img/twitter-svgrepo-com.svg" alt="Twitter" height="20" width="20">
+            </a>
+        </div>
+    </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

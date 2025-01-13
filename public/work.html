@@ -11,41 +11,34 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-marian-blue">
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/Logo Innovawatch.png" alt="Bootstrap" width="70" height="50">
+                <img src="../assets/img/Logo Innovawatch.png" alt="Innovawatch Logo" width="70" height="50">
             </a>
-            <a class="navbar-brand text-light" href="#">Innovawatch</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand text-light" href="../index.html">Innovawatch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../public/">Productos</a>
+                        <a class="nav-link text-light" href="./productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../public/contact.html">Contacto</a>
+                        <a class="nav-link text-light" href="./contact.html">Contacto</a>
                     </li>
-
                     <li class="nav-item">
-                        <a href="../public/login.html" class="btn btn-outline-vivid-sky-blue">Login</a>
+                        <a href="./login.html" class="btn btn-outline-light">Login</a>
                     </li>
-                    <br>
                     <li class="nav-item">
-                        <a href="../public/register.html" class="btn btn-outline-vivid-sky-blue">Register</a>
+                        <a href="./register.html" class="btn btn-outline-light">Register</a>
                     </li>
-
                 </ul>
-
-                <form class="d-flex me-5" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Encuentra tu producto"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success d-inline-flex align-items-center" type="submit">Search <img
-                            src="../assets/img/search_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                <form class="d-flex ms-5" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Encuentra tu producto" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -96,10 +89,17 @@
             </div>
         </div>
     </section>
-
-    <footer class="text-center py-3">
-        &copy; 2024 Tu Compañía. Todos los derechos reservados.
-    </footer>
+ <!-- Pie de página -->
+ <footer class="bg-primary text-light py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="footerMain mb-0">InnovaWatch S.A 2024 &copy;</p>
+        <div class="social">
+            <a href="https://x.com/innovawatch?t=INDYsRH5XOkVjcHnez8QZQ&s=09">
+                <img src="../assets/img/twitter-svgrepo-com.svg" alt="Twitter" height="20" width="20">
+            </a>
+        </div>
+    </div>
+</footer>
 
 </body>
 
